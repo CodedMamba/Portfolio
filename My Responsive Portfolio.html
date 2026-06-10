@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akinsanya Pius Frontend Developer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#111827;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.3);
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+    }
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+section{
+    min-height:100vh;
+    padding:120px 8% 80px;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero-content span{
+    color:#38bdf8;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    transition:.3s;
+    margin:5px;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+    transform:translateY(-3px);
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+    color:#38bdf8;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.services-container,
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    outline:none;
+    border-radius:8px;
+}
+
+.contact-form button{
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+}
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    nav ul{
+        gap:12px;
+        font-size:.9rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">My Personal Portfolio</div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Akinsanya Pius</span></h1>
+
+        <p>
+            Software Engineering Frontend Developer who loves building
+            modern, responsive websites with HTML, CSS, JavaScript and React.
+            I create clean user experiences and engaging digital products.
+        </p>
+
+        <a href="MY PERSONAL CV.rtf" download class="btn">
+            Download Resume
+        </a>
+
+        <a href="#projects" class="btn">
+            View Projects
+        </a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-content">
+        <p>
+            Hi I'm Akinsanya Pius Omowunmi, a frontend Developer building
+            responsive, accessible user interfaces with HTML, CSS and
+            JavaScript. I enjoy turning designs into fast, polished
+            experiences and learning new tools every week.
+            I'm currently open to junior frontend roles and internships.
+        </p>
+
+        <br>
+
+        <a href="MY PERSONAL CV.rtf" download class="btn">
+            Download Resume
+        </a>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2 class="section-title">Services</h2>
+
+    <div class="services-container">
+
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>
+                Beautiful user friendly websites designed to impress.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Development</h3>
+            <p>
+                Modern, scalable web applications.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>
+                A responsive personal portfolio.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Nova Landing Page</h3>
+            <p>
+                I designed a modern landing page for Nova.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Careplus Hospital Website</h3>
+            <p>
+                I designed a modern hospital website.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <form class="contact-form" id="contactForm">
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            rows="6"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button class="btn">
+            Send Message
+        </button>
+
+    </form>
+</section>
+
+<footer>
+    <p>
+        © 2026 Akinsanya Pius. All Rights Reserved.
+    </p>
+</footer>
+
+<script>
+
+// Contact Form Alert
+document.getElementById("contactForm")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("Thank you! Your message has been sent.");
+
+    this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
